@@ -1,0 +1,32 @@
+<head>
+  <link rel="stylesheet" href="../static/css/canvas.css" type="text/css">\
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+</head>
+<body>
+<form action="/" method="post" id="form1" enctype="multipart/form-data" >
+<div id="sketch">
+  <canvas id="paint"></canvas>
+</div>
+<input type="text" id="image" name="the_file" hidden>
+<input type="button" onClick="sendImageForRecognition()" value="Identify the Character">
+</form>
+
+<div id="settings"> Colours
+  <button onclick="getColor('blue');">Blue</button>
+  <button onclick="getColor('red');">Red</button>
+  <button onclick="getColor('green');">Green</button>
+  <button onclick="getColor('white');">White</button>
+  <button onclick="getColor('#333333');">Eraser</button>
+</div>
+
+<div id="settings"> Brush Size
+  <button onclick="getSize('2');">Small</button>
+  <button onclick="getSize('5');">Med</button>
+  <button onclick="getSize('10');">Large</button>
+  <button onclick="getSize('20');">X Large</button>
+</div>
+<div style="margin-left: 47%;margin-top: 1%;">
+
+</div>
+<script type="text/javascript" src="../static/js/canvas.js"></script>
+</body>
