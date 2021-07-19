@@ -8,23 +8,23 @@ def identify_character_class(image_path):
     image_size = 200
     X = [] 
     label_verification = {
-                        0: '2',
-                        1: '9',
-                        2: 'adna',
-                        3: 'bha',
-                        4: 'cha',
-                        5: 'daa',
-                        6: 'ga',
-                        7: 'gha',
-                        8: 'gya',
-                        9: 'kna',
-                        10: 'patalosaw',
-                        11: 'petchiryakha',
-                        12: 'pha',
-                        13: 'ra',
-                        14: 'taamatar',
-                        15: 'tha',
-                        16: 'yaw'
+                        0: '२ / 2',
+                        1: '९ / 9',
+                        2: 'ण / adna',
+                        3: 'भ / bha',
+                        4: 'छ / cha',
+                        5: 'ड / daa',
+                        6: 'ग / ga',
+                        7: 'घ / gha',
+                        8: 'ज्ञ / gya',
+                        9: 'ड़ / kna',
+                        10: 'स / patalosaw',
+                        11: 'ष / petchiryakha',
+                        12: 'फ / pha',
+                        13: 'र / ra',
+                        14: 'ट / taamatar',
+                        15: 'ठ / tha',
+                        16: 'य / yaw'
                     }
 
 

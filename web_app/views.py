@@ -1,4 +1,4 @@
-from flask import Flask ,render_template
+from flask import Flask ,render_template,flash
 import os
 from flask import request
 import base64
@@ -20,7 +20,7 @@ def character_recoginzer():
         # file_path = '/home/adarsh/projects/new_project/kaggle/Kaggle-competitions/Character_Recognition/data_dir/test_file.jpg'
         if saved:
             character_string = identify_character_class(file_path)
-            return '<h1>'+str(character_string)+'</h1>'
+            return str(character_string)
         else:
             return 'Error'    
 

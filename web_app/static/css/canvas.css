@@ -4,4 +4,21 @@
 #settings { display: block; text-align:center}
 
 
-#paint {border: 1px solid black; background : #333333; margin-left: auto; margin-right: auto; display: block;}
+body{
+    background-image:url(../image/bg.png)
+}
+
+
+#paint {border: 1px solid black; background : #333333; margin-left: auto; margin-right: auto; display: inline;}
+
+
+
+#result {border: 1px solid black; background : #ffffff; margin-left: auto; margin-right: auto; display: inline;font-size: 124px;}
+
+
+#compare {margin: 100px; display: inline;}
+
+#form1{
+    margin-left: 15%;
+
+}
