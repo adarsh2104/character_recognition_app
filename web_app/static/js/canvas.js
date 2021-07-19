@@ -19,6 +19,7 @@ ctx.lineJoin = 'round';
 ctx.lineCap = 'round';
 
 ctx.strokeStyle = "white";
+ctx.lineWidth = 20
 function getColor(colour) { ctx.strokeStyle = colour; }
 
 function getSize(size) { ctx.lineWidth = size; }
