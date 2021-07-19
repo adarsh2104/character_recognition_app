@@ -18,7 +18,8 @@ canvas.addEventListener('mousemove', function (e) {
 ctx.lineJoin = 'round';
 ctx.lineCap = 'round';
 
-ctx.strokeStyle = "red";
+ctx.strokeStyle = "white";
+ctx.lineWidth = 20
 function getColor(colour) { ctx.strokeStyle = colour; }
 
 function getSize(size) { ctx.lineWidth = size; }
@@ -63,8 +64,20 @@ function sendImageForRecognition(e) {
     var formData = new FormData();
     formData.append("image", new Blob([u8Image], { type: "image/jpg" }));
 
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", "/", true);
-    xhr.send(formData);
+    var XHR = new XMLHttpRequest();
+    XHR.open("POST", "/", true);
+    XHR.send(formData);
 
+    XHR.onload = function () {
+
+        // Process our return data
+        if (XHR.status >= 200 && XHR.status < 300) {
+            // Runs when the request is successful
+            document.getElementById("result").innerText =  XHR.responseText;
+        } else {
+            // Runs when it's not
+            console.log(XHR.responseText);
+        }
+
+}
 }
