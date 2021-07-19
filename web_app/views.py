@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 from flask import Flask ,render_template,flash
+=======
+from flask import Flask ,render_template
+>>>>>>> 30b0cfcb7e8576f8df85d25944371578a51e7a15
 import os
 from flask import request
 import base64
@@ -8,9 +12,12 @@ from character_recognition_model import identify_character_class
 
 
 app = Flask(__name__,template_folder='./templates', static_folder='./static')
+<<<<<<< HEAD
 app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
 
 
+=======
+>>>>>>> 30b0cfcb7e8576f8df85d25944371578a51e7a15
 
 @app.route("/" ,methods=['GET', 'POST'])
 def character_recoginzer():
@@ -23,7 +30,11 @@ def character_recoginzer():
         # file_path = '/home/adarsh/projects/new_project/kaggle/Kaggle-competitions/Character_Recognition/data_dir/test_file.jpg'
         if saved:
             character_string = identify_character_class(file_path)
+<<<<<<< HEAD
             return str(character_string)
+=======
+            return '<h1>'+str(character_string)+'</h1>'
+>>>>>>> 30b0cfcb7e8576f8df85d25944371578a51e7a15
         else:
             return 'Error'    
 

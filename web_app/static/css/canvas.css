@@ -3,6 +3,7 @@
 
 #settings { display: block; text-align:center}
 
+<<<<<<< HEAD
 body{
     background-image:url(../image/bg.png)
 }
@@ -21,3 +22,7 @@ body{
     margin-left: 15%;
 
 }
+=======
+
+#paint {border: 1px solid black; background : #333333; margin-left: auto; margin-right: auto; display: block;}
+>>>>>>> 30b0cfcb7e8576f8df85d25944371578a51e7a15
