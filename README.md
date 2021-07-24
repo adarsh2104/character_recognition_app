@@ -1,1 +1,1 @@
-# character_reconition_model
+# character_recognition_model
