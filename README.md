@@ -1,4 +1,4 @@
-# character_recognition_model
+# Handwritten Character Recognition
 
 - Given a Handwritten Devanagiri character contained in an image.
 The CNN model will predict the character. Trained on 46 diﬀerent
